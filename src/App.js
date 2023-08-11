@@ -7,11 +7,13 @@ function App() {
   return (
     <Router>
       <Routes>
-<Route exact path="/" element={<Accueil />} />
-        <Route path="/appartement/:id" component={Appartement} />
+        <Route path="/" element={<Accueil />} />
+        <Route path="/appartement/:appartementId" element={<Appartement />} />
+        {/* Autres routes */}
       </Routes>
     </Router>
   );
 }
 
 export default App;
+

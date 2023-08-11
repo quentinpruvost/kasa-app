@@ -1,20 +1,21 @@
+// Appartement.js
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import appartementsData from '../data/appartements.json';
 
 function Appartement() {
-  const { id } = useParams();
-  const appartement = appartementsData.find((appartement) => appartement.id === id);
+  const { appartementId } = useParams();
+
+  const appartement = appartementsData.find(appartement => appartement.id === appartementId);
 
   if (!appartement) {
-    return <div>Appartement non trouvé</div>;
+    return <div>Logement non trouvé</div>;
   }
 
   return (
     <div>
-      <h2>{appartement.title}</h2>
+      <h1>{appartement.title}</h1>
       <img src={appartement.cover} alt={appartement.title} />
-      <p>{appartement.description}</p>
       <p>{appartement.location}</p>
     </div>
   );
