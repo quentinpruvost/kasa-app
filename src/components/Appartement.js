@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import Slideshow from './appartcomponents/Slideshow';
 import appartementsData from '../data/appartements.json';
+import Collapse from './Collapse';
 
 function Appartement() {
   const { appartementId } = useParams();
@@ -17,7 +18,7 @@ function Appartement() {
       <p>{appartement.location}</p>
       <Slideshow images={appartement.pictures} />
       <p>{appartement.description}</p>
-      {/* Autres informations sur l'appartement */}
+      <Collapse title="test" content="ouverture collapse" />
     </div>
   );
 }
