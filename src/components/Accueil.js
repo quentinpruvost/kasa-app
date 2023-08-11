@@ -1,4 +1,3 @@
-// Accueil.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 import appartementsData from '../data/appartements.json';
@@ -6,6 +5,7 @@ import appartementsData from '../data/appartements.json';
 function Accueil() {
   return (
     <div>
+      <Link to="/a-propos">À Propos</Link>
       <h1>Appartements de vacances</h1>
       <ul>
         {appartementsData.map((appartement) => (
