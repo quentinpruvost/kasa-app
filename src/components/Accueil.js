@@ -5,7 +5,6 @@ import appartementsData from '../data/appartements.json';
 function Accueil() {
   return (
     <div>
-      <Link to="/a-propos">À Propos</Link>
       <h1>Appartements de vacances</h1>
       <ul>
         {appartementsData.map((appartement) => (

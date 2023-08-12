@@ -1,0 +1,57 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: white;
+  color: white;
+
+  .navbar-logo img {
+    height: 68px;
+  }
+
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    
+
+    li {
+      font-size: 23px;
+
+      a {
+        text-decoration: none;
+        color: #FF6060;
+        ;
+
+        // Souligner la sélection de la page
+        &.selected {
+          border-bottom: 2px solid #FF6060;
+          ;
+        }
+      }
+    }
+
+    // Souligner le lien de la page en cours
+    .current-page {
+      border-bottom: 2px solid #FF6060;
+      ;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 10px;
+    .navbar-logo img {
+        height: 48px;
+      }
+    .navbar-links {
+      flex-direction: row; 
+      align-items: center;
+      gap: 20px;
+
+      li {
+        font-size: 15px;
+      }
+    }
+  }
+}
