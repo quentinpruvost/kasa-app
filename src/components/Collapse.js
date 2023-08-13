@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './styles/collapse.css'; 
 
 function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,10 +9,14 @@ function Collapse({ title, content }) {
   };
 
   return (
-    <div className="collapse">
+    <div className={`collapse-container ${isOpen ? 'open' : 'closed'}`}>
       <div className="collapse-header" onClick={toggleCollapse}>
         <h3>{title}</h3>
-        <span>{isOpen ? '▲' : '▼'}</span>
+        <img
+          src="https://zupimages.net/up/23/32/dwck.png"
+          alt="Toggle"
+          className={`arrow ${isOpen ? 'down' : ''}`}
+        />
       </div>
       {isOpen && <div className="collapse-content">{content}</div>}
     </div>

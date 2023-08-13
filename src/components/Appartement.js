@@ -14,10 +14,11 @@ function Appartement() {
 
   return (
     <div>
+      <Slideshow images={appartement.pictures} />
       <h1>{appartement.title}</h1>
       <p>{appartement.location}</p>
-      <Slideshow images={appartement.pictures} />
       <p>{appartement.description}</p>
+      <Collapse title="test" content="ouverture collapse" />
       <Collapse title="test" content="ouverture collapse" />
     </div>
   );

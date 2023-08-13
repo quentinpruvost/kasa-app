@@ -1,0 +1,49 @@
+$color_1: white;
+$color_2: #ff6060;
+$background-color_1: #f6f6f6;
+
+.collapse-container {
+	border: 1px solid #ccc;
+	margin-bottom: 15px;
+	background-color: $background-color_1;
+	border-radius:10px;
+}
+.collapse-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $color_2;
+	border-radius: 10px;
+	padding: 10px;
+	cursor: pointer;
+	h3 {
+		margin: 0;
+		color: $color_1;
+	}
+	.arrow {
+		font-size: 18px;
+		transition: transform 0.3s ease;
+	}
+}
+.arrow {
+	font-size: 18px;
+	color: $color_1;
+}
+.arrow.down {
+	transform: rotate(180deg);
+}
+.open {
+	.arrow.up {
+		transform: rotate(180deg);
+	}
+}
+.collapse-content {
+	padding: 10px;
+	color: $color_2;
+}
+.collapse-header.open {
+	.arrow {
+		transform: rotate(180deg);
+		transition: transform 0.3s ease;
+	}
+}
