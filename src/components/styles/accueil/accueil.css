@@ -1,0 +1,27 @@
+/* styles/accueil/accueil.css */
+.accueil-image-container {
+  position: relative;
+  height: 223px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  opacity: 1;
+  background: #000;
+  mix-blend-mode: darken;
+  overflow: hidden;
+}
+.accueil-image-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 48px;
+  text-align: center;
+}/*# sourceMappingURL=accueil.css.map */
