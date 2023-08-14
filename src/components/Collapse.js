@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './styles/collapse.css'; 
+import './styles/collapse.css';
 
-function Collapse({ title, content }) {
+function Collapse({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {
@@ -18,7 +18,7 @@ function Collapse({ title, content }) {
           className={`arrow ${isOpen ? 'down' : ''}`}
         />
       </div>
-      {isOpen && <div className="collapse-content">{content}</div>}
+      {isOpen && <div className="collapse-content">{children}</div>}
     </div>
   );
 }

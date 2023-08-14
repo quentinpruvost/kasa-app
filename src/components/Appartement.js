@@ -17,9 +17,27 @@ function Appartement() {
       <Slideshow images={appartement.pictures} />
       <h1>{appartement.title}</h1>
       <p>{appartement.location}</p>
-      <p>{appartement.description}</p>
-      <Collapse title="test" content="ouverture collapse" />
-      <Collapse title="test" content="ouverture collapse" />
+
+      <Collapse title="Description">
+        <p>{appartement.description}</p>
+      </Collapse>
+      <Collapse title="Équipements">
+        <ul>
+          {appartement.equipments.map((equipment, index) => (
+            <li key={index}>{equipment}</li>
+          ))}
+        </ul>
+      </Collapse>
+
+      <p>Note : {appartement.rating}/5</p>
+      <p>Hôte : {appartement.host.name}</p>
+
+      <h2>Tags :</h2>
+      <ul>
+        {appartement.tags.map((tag, index) => (
+          <li key={index}>{tag}</li>
+        ))}
+      </ul>
     </div>
   );
 }
