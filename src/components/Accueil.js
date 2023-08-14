@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import appartementsData from '../data/appartements.json';
-import './styles/accueil/accueil.css'; // Importez le fichier CSS
+import './styles/accueil/accueil.css';
 
 function Accueil() {
   return (

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './slideshow.css'; // Assurez-vous d'importer votre fichier CSS pour les styles
 
 function Slideshow({ images }) {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -15,15 +16,15 @@ function Slideshow({ images }) {
     <div className="slideshow">
       <div className="slide-container">
         <img src={images[currentSlide]} alt={`Slide ${currentSlide + 1}`} />
+        <button className="arrows left-arrows" onClick={prevSlide}>
+          <img src="https://zupimages.net/up/23/32/tmfv.png" alt="Left arrows" />
+        </button>
+        <button className="arrows right-arrows" onClick={nextSlide}>
+          <img src="https://zupimages.net/up/23/32/a1ft.png" alt="Right arrows" />
+        </button>
       </div>
       <div className="controls">
-        <button onClick={prevSlide}>
-          <span>&#9664;</span>
-        </button>
         <p>{`${currentSlide + 1} / ${images.length}`}</p>
-        <button onClick={nextSlide}>
-          <span>&#9654;</span>
-        </button>
       </div>
     </div>
   );
