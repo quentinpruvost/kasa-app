@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import Slideshow from './appartcomponents/Slideshow';
 import appartementsData from '../data/appartements.json';
 import Collapse from './Collapse';
+import Etoiles from './appartcomponents/Etoiles';
 
 function Appartement() {
   const { appartementId } = useParams();
@@ -18,6 +19,8 @@ function Appartement() {
       <h1>{appartement.title}</h1>
       <p>{appartement.location}</p>
 
+      <Etoiles note={parseInt(appartement.rating)} />
+
       <Collapse title="Description">
         <p>{appartement.description}</p>
       </Collapse>
@@ -29,7 +32,7 @@ function Appartement() {
         </ul>
       </Collapse>
 
-      <p>Note : {appartement.rating}/5</p>
+      
       <p>Hôte : {appartement.host.name}</p>
 
       <h2>Tags :</h2>
