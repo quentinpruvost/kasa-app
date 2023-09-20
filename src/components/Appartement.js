@@ -4,6 +4,7 @@ import Slideshow from './appartcomponents/Slideshow';
 import appartementsData from '../data/appartements.json';
 import Collapse from './Collapse';
 import Etoiles from './appartcomponents/Etoiles';
+import './appartcomponents/tag.css';
 
 function Appartement() {
   const { appartementId } = useParams();
@@ -31,16 +32,14 @@ function Appartement() {
           ))}
         </ul>
       </Collapse>
-
       
       <p>Hôte : {appartement.host.name}</p>
 
-      <h2>Tags :</h2>
-      <ul>
+      <div className="tags-container">
         {appartement.tags.map((tag, index) => (
-          <li key={index}>{tag}</li>
+          <li key={index} className="tag">{tag}</li>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }

@@ -15,17 +15,20 @@ function Accueil() {
           Chez vous, partout et ailleurs
         </div>
       </div>
-      <ul>
+      <div className="appartements-container">
         {appartementsData.map((appartement) => (
-          <li key={appartement.id}>
+          <div className="appartement-card" key={appartement.id}>
             <Link to={`/appartement/${appartement.id}`}>
-              <img src={appartement.cover} alt={appartement.title} />
-              <h2>{appartement.title}</h2>
-              <p>{appartement.location}</p>
+              <div className="image-overlay">
+                <img src={appartement.cover} alt={appartement.title} />
+                <div className="card-text">
+                  <h2>{appartement.title}</h2>
+                </div>
+              </div>
             </Link>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }

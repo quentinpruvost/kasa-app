@@ -1,0 +1,19 @@
+.tag {
+  background-color: #FF6060;
+  width: 115px;
+  height: 25px;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .tag {
+    width: 84px;
+    height: 18px;
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=tag.css.map */
