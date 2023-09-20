@@ -5,7 +5,6 @@ import Appartement from './components/Appartement';
 import APropos from './components/APropos'; 
 import PageErreur from './components/PageErreur';
 import Navbar from './components/Navbar';
-import Footer from './components/Footer.js';
 import './components/styles/globalStyles.css';
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
         {/* Autres routes */}
         <Route path="/*" element={<PageErreur />} /> {/* Route pour les chemins inexistants */}
       </Routes>
-      <Footer />
     </Router>
   );
 }

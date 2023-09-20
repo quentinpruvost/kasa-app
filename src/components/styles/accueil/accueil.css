@@ -23,4 +23,98 @@
   color: white;
   font-size: 43px;
   text-align: center;
-}/*# sourceMappingURL=accueil.css.map */
+}
+.appartements-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin: 0 auto;
+  background-color: #F6F6F6;
+  padding: 10px;
+  border-radius: 5%;
+}
+
+.appartement-card {
+  width: calc(33.33% - 20px); /* Pour obtenir 3 colonnes avec des marges */
+  margin: 10px;
+  background-color: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.appartement-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10%;
+}
+.appartements-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin: 0 auto;
+  background-color: #F6F6F6;
+  padding: 10px;
+}
+
+.appartement-card {
+  width: calc(33.33% - 20px); /* Pour obtenir 3 colonnes avec des marges */
+  margin: 10px;
+  background-color: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 10%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.image-overlay {
+  position: relative;
+}
+
+.image-overlay img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+  color: white; /* Couleur du texte en blanc */
+}
+
+.card-text h2 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.2;
+}
+/* Media Query pour les écrans max 768px */
+@media screen and (max-width: 768px) {
+  .accueil-image-container {
+    height: 111px; /* Ajuster la hauteur de l'image au contenu */
+  }
+
+  .image-text {
+    font-size: 24px;
+    position: absolute;
+    left: 36%;
+    transform: translate(-50%, -50%);
+    text-align: unset;
+  }
+
+  .appartements-container {
+    flex-direction: column; /* Afficher les appartements en colonnes */
+    align-items: center; /* Centrer les appartements */
+  }
+
+  .appartement-card {
+    width: 100%; /* Pleine largeur pour un appartement par ligne */
+    margin: 10px 0; /* Ajouter de l'espace en haut et en bas */
+  }
+}
