@@ -24,7 +24,6 @@
         color: #FF6060;
         ;
 
-        // Souligner la sélection de la page
         &.selected {
           border-bottom: 2px solid #FF6060;
           ;
@@ -32,7 +31,6 @@
       }
     }
 
-    // Souligner le lien de la page en cours
     .current-page {
       border-bottom: 2px solid #FF6060;
       ;

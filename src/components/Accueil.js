@@ -17,7 +17,7 @@ function Accueil() {
       </div>
       <div className="appartements-container">
         {appartementsData.map((appartement) => (
-          <div className="appartement-card" key={appartement.id}>
+          <div className="appartementcard" key={appartement.id}>
             <Link to={`/appartement/${appartement.id}`}>
               <div className="image-overlay">
                 <img src={appartement.cover} alt={appartement.title} />

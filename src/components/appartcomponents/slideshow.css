@@ -11,7 +11,7 @@
   height: 100%;
   overflow: hidden;
   border-radius: 25px;
-  transition: transform 0.5s ease-in-out; /* Ajout de la transition */
+  transition: transform 0.5s ease-in-out; 
 }
 
 .slide-container img {

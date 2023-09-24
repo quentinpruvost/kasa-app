@@ -1,4 +1,5 @@
 import React from 'react';
+import './etoiles.css';
 
 function Etoiles({ note }) {
   const etoilesRemplies = Math.round(note);
@@ -8,7 +9,7 @@ function Etoiles({ note }) {
   const etoilesVidesArray = Array.from({ length: etoilesVides });
 
   return (
-    <div>
+    <div className="etoiles"> 
       {etoilesRempliesArray.map((_, index) => (
         <img
           key={index}

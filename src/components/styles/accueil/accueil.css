@@ -11,7 +11,7 @@
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   opacity: 0.8;
 }
 
@@ -24,6 +24,7 @@
   font-size: 43px;
   text-align: center;
 }
+
 .appartements-container {
   display: flex;
   flex-wrap: wrap;
@@ -33,23 +34,6 @@
   background-color: #F6F6F6;
   padding: 10px;
   border-radius: 5%;
-}
-
-.appartement-card {
-  width: calc(33.33% - 20px); /* Pour obtenir 3 colonnes avec des marges */
-  margin: 10px;
-  background-color: #FFFFFF;
-  border: 1px solid #EAEAEA;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-.appartement-card img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10%;
-}
-.appartements-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -60,7 +44,21 @@
 }
 
 .appartement-card {
-  width: calc(33.33% - 20px); /* Pour obtenir 3 colonnes avec des marges */
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  background-color: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.appartement-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10%;
+}
+
+.appartementcard {
+  width: calc(33.33% - 20px);
   margin: 10px;
   background-color: #FFFFFF;
   border: 1px solid #EAEAEA;
@@ -72,10 +70,10 @@
 .image-overlay {
   position: relative;
 }
-
 .image-overlay img {
   max-width: 100%;
   height: auto;
+  border-radius: 10%;
 }
 
 .card-text {
@@ -86,20 +84,18 @@
   width: 100%;
   box-sizing: border-box;
   text-align: left;
-  color: white; /* Couleur du texte en blanc */
+  color: white;
 }
-
 .card-text h2 {
   margin: 0;
   font-size: 18px;
   line-height: 1.2;
 }
-/* Media Query pour les écrans max 768px */
+
 @media screen and (max-width: 768px) {
   .accueil-image-container {
-    height: 111px; /* Ajuster la hauteur de l'image au contenu */
+    height: 111px;
   }
-
   .image-text {
     font-size: 24px;
     position: absolute;
@@ -107,14 +103,12 @@
     transform: translate(-50%, -50%);
     text-align: unset;
   }
-
   .appartements-container {
-    flex-direction: column; /* Afficher les appartements en colonnes */
-    align-items: center; /* Centrer les appartements */
+    flex-direction: column;
+    align-items: center;
   }
-
-  .appartement-card {
-    width: 100%; /* Pleine largeur pour un appartement par ligne */
-    margin: 10px 0; /* Ajouter de l'espace en haut et en bas */
+  .appartementcard {
+    width: 100%;
+    margin: 10px 0;
   }
-}
+}/*# sourceMappingURL=accueil.css.map */

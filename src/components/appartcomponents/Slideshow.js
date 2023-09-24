@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './slideshow.css'; // Assurez-vous d'importer votre fichier CSS pour les styles
+import './slideshow.css';
 
 function Slideshow({ images }) {
   const [currentSlide, setCurrentSlide] = useState(0);

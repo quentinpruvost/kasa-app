@@ -1,0 +1,23 @@
+.appartement-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10%;
+  }
+
+.collap {
+margin: 100px;
+  }
+  
+@media (max-width: 768px) {
+  
+    .collap {
+      margin: 0; 
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+    .appartement-card img {
+      max-width: 10px;
+      height: 100px;
+      border-radius: 1%;
+    }
+  }
