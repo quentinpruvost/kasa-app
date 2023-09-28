@@ -4,6 +4,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 body {
   margin: 30px 136px 0px 136px;
   padding: 0;
@@ -12,8 +13,18 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.footer-container {
+  background-color: #000;
+  color: white;
+  margin: 10px -136px 0px -136px;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   body {
     margin: 10px 20px 0px 20px;
+  }
+  .footer-container {
+    margin: 0;
   }
 }/*# sourceMappingURL=globalStyles.css.map */

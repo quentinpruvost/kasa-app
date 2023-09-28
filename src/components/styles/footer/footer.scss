@@ -2,18 +2,21 @@ $color_1: white;
 $background-color_1: #000;
 
 .footer {
-	background-color: $background-color_1;
-	color: $color_1;
-	padding: 20px 0;
-	text-align: center;
+    background-color: $background-color_1;
+    color: $color_1;
+    padding: 20px 0;
+    text-align: center;
 }
+
+
 .footer-content {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .footer-logo {
-	width: 100px;
-	height: auto;
-	margin-bottom: 10px;
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
 }

@@ -3,6 +3,7 @@
   height: 415px;
   flex-shrink: 0;
   position: relative;
+  margin-bottom:40px ;
 }
 
 .slide-container {

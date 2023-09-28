@@ -11,15 +11,16 @@ import './components/styles/globalStyles.css';
 function App() {
   return (
     <Router>
-            <Navbar /> {/* Affichez la barre de navigation */}
+            <Navbar /> 
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/appartement/:appartementId" element={<Appartement />} />
         <Route path="/a-propos" element={<APropos />} />
-        {/* Autres routes */}
         <Route path="/*" element={<PageErreur />} /> {/* Route pour les chemins inexistants */}
       </Routes>
-      <Footer />
+      <div className="footer-container">
+        <Footer />
+      </div>
     </Router>
   );
 }

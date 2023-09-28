@@ -2,12 +2,10 @@ import React from 'react';
 import Collapse from './Collapse';
 import './styles/apropos/apropos.css';
 
-
-
 function APropos() {
   return (
     <div>
-            <div className="accueil-image-container">
+      <div className="accueil-image-container">
         <img
           src="https://zupimages.net/up/23/38/k6oa.png"
           alt="accueil"
