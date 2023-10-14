@@ -1,12 +1,11 @@
-.equipment-container {
-  text-align: right;
-  margin-left: 650px;
-  margin-top: -70px;
+.column-container {
+  display: flex;
+  justify-content: space-between;
 }
 
-.descript-container {
-  text-align: right;
-  margin-right: 650px;
+.column {
+  margin-right: 20px;
+  flex: 1;
 }
 
 .content-container {

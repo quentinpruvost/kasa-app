@@ -18,9 +18,8 @@ function Appartement() {
   return (
     <div>
       <Slideshow images={appartement.pictures} />
-      {/* Utilisez un conteneur pour aligner les éléments en colonne */}
+
       <div className="content-container">
-        {/* Partie gauche avec le titre, la localisation et les tags */}
         <div className="left-column">
           <h1>{appartement.title}</h1>
           <p>{appartement.location}</p>
@@ -33,37 +32,36 @@ function Appartement() {
           </div>
         </div>
 
-        {/* Partie droite avec les informations de l'hôte et la note */}
         <div className="right-column">
-          {/* Affichez le nom de l'hôte et sa photo à gauche de la photo */}
           <div className="host-info">
             <p>{appartement.host.name}</p>
             <img src={appartement.host.picture} alt={appartement.host.name} />
           </div>
-          {/* Affichez la note sous forme d'étoiles */}
           <div className="etoiles-container">
             <Etoiles note={parseInt(appartement.rating)} />
           </div>
         </div>
       </div>
 
-      <div className="descript-container">
-        <Collapse title="Description">
-          <p>{appartement.description}</p>
-        </Collapse>
-      </div>
-
-      <div className="equipment-container">
-        <Collapse title="Équipements">
-          <ul>
-            {appartement.equipments.map((equipment, index) => (
-              <li key={index}>{equipment}</li>
-            ))}
-          </ul>
-        </Collapse>
+      <div className="column-container">
+        <div className="column">
+          <Collapse title="Description">
+            <p>{appartement.description}</p>
+          </Collapse>
+        </div>
+        <div className="column">
+          <Collapse title="Équipements">
+            <ul>
+              {appartement.equipments.map((equipment, index) => (
+                <li key={index}>{equipment}</li>
+              ))}
+            </ul>
+          </Collapse>
+        </div>
       </div>
     </div>
   );
 }
+
 
 export default Appartement;
